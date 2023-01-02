@@ -17,5 +17,9 @@ export class TodoItemComponent implements OnInit {
     this.todoService.deleteToDoItem(id)
     this.toDoItems=this.todoService.getToDoList()
   }
+  onEdit(id:number){
+    this.todoService.editToDoList(id)
+    this.toDoItems=this.todoService.getToDoList()
+  }
   
 }

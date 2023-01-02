@@ -34,5 +34,9 @@ export class ToDoService{
     }
     getToDoList(){
         return this.todoItem
+    }
+    editToDoList(id){
+        const objId=this.todoItem.findIndex(item=>item.id==id)
+        this.todoItem[objId].status="completed"
     }    
 }
